@@ -1,27 +1,45 @@
 body{
-  background-color: #e7b194;
-  background-image: linear-gradient(62deg, #e7b194 0%, #f3d999 50%, #ffffff 100%);
-  
+  background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 }
   h1{
     font-family: 'Kanit', sans-serif;
     font-size: 60px;
     color: rgb(198, 197, 223);
-
-
     text-align: center;
 }
 h2{
     font-family: 'Teko', sans-serif;
-    font-size: 40px;
+    font-size: 24px;
     text-decoration: underline;
+    text-align: center;
+}
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(44, 41, 37); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 6s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(31, 30, 28) }
+}
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 font-family: 'Kanit', sans-serif;
-color: white
+color: rgb(18, 17, 17)
 }
 @-webkit-keyframes tracking-in-expand {
   0% {
@@ -160,8 +178,6 @@ color: white
     opacity: 1;
   }
 }
-
-
 h3{
     font-family: 'Teko', sans-serif;
 }
@@ -169,10 +185,6 @@ h4{
     font-family: 'Kanit', sans-serif;
     font-size: 30px;
 }
-
-
-
-/* CSS */
 /* Add a black background color to the top navigation bar */
 .topnav {
     overflow: hidden;
@@ -228,19 +240,24 @@ background: linear-gradient(90deg, rgba(187,140,218,1) 0%, rgba(222,98,98,1) 50%
 }
 
 .card{
-
-    display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 350px 350px;
+  grid-template-rows: 150px 150px;
   gap: 50px;
   padding-left: 50px;
   padding-right: 50px;
+  opacity: 1;
+  transition: opacity 1s ease 1s;
+}
+
+.card:hover{
+  opacity: 0.3;
 }
 .card1{
     box-sizing: border-box;
     width: 100%;
-    min-height: 30px;
-    background-image: url(images/art.png);
+    min-height: 300px;
+    background-image: url(images/1.png);
     border-radius: 20px;
     text-align: center;
     background-position: center;
@@ -259,13 +276,13 @@ background: linear-gradient(90deg, rgba(187,140,218,1) 0%, rgba(222,98,98,1) 50%
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 .card2{
     box-sizing: border-box;
     width: 100%;
     min-height: 300px;
-    background-image: url(images/church.png);
+    background-image: url(images/blue.png);
     border-radius: 20px;
     text-align: center;
     background-position: center;
@@ -280,17 +297,17 @@ background: linear-gradient(90deg, rgba(187,140,218,1) 0%, rgba(222,98,98,1) 50%
     padding: 10px;
     border-radius: 20px;
     display: block;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 .card3{
     box-sizing: border-box;
     width: 100%;
     min-height: 300px;
-    background-image: url(images/plant.png);
+    background-image: url(images/rose.png);
     text-align: center;
     border-radius: 20px;
     text-align: center ;
@@ -310,17 +327,16 @@ background: linear-gradient(90deg, rgba(187,140,218,1) 0%, rgba(222,98,98,1) 50%
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 .card4{
     box-sizing: border-box;
     width: 100%;
     min-height: 300px;
-    background-image: url(images/view.png);
+    background-image: url(images/smile.png);
     border-radius: 20px;
     text-align: center;
-
-    background-position: center;
+  background-position: center;
     background-size: 100%;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -336,20 +352,16 @@ background: linear-gradient(90deg, rgba(187,140,218,1) 0%, rgba(222,98,98,1) 50%
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
-
-
-
-
-/* CSS */
+/* CSS button*/
 .button-85 {
-    font-family: 'Teko', sans-serif;
+ font-family: 'Teko', sans-serif;
   padding: 20px;
   border: none;
   outline: none;
-  color: rgb(255, 255, 255);
-  background: #111;
+  color: rgb(246, 242, 242);
+  background: rgb(255, 252, 252);
   margin-bottom: 10px;
   cursor: pointer;
   position: relative;
@@ -358,8 +370,9 @@ background: linear-gradient(90deg, rgba(187,140,218,1) 0%, rgba(222,98,98,1) 50%
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-}
+  text-align: right;
 
+}
 
 .button-85:before {
   content: "";
@@ -413,92 +426,44 @@ background: linear-gradient(90deg, rgba(187,140,218,1) 0%, rgba(222,98,98,1) 50%
   top: 0;
   border-radius: 10px;
 }
-/*    columns: 3;
-
-    box-sizing: border-box;
-
-    /*display: block;
-    padding: 70px;
-    width: 40px;
-    margin-bottom: 10px;
-    background-color: rgb(248, 244, 239);
-
-.back{
-    display: flex;
-    width: 30px;
-    height: 50px;
-
-    padding: 20px 30px;
-    background-color: #e6ecf0;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}*/
-nav ul li a{
-  text-decoration: none;
-}
-.RD ul li a{
-  text-decoration: none;
+h4{
+  text-align: center;
 }
 #columns{
-
     display: flex;
     flex-direction: row;
-    text-align: center;
-
+    text-align: left;
+    justify-content: space-evenly;
 }
 #columns div{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(196, 231, 235);
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 30px;
-  column-gap: 10px;
-  margin: auto;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 60px;
-  margin-top: auto;
-   opacity: 1;
-   transition: opacity 1s ease 0s;
-  
-
+  column-gap: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px,rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
 }
 
-#columns div:hover{
-  opacity: 0.6;
-}
-#columns div a{
-  text-align: center;
- 
-}
-nav ul li a{
+ul{
   text-decoration: none;
+  list-style-type: none;
 }
-h2{
-    text-align: center;
-}
-
-   /* box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
-    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px,rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px, rgba(0, 0, 0, 0.45) 55px 75px 50px -50px, rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px,rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
-
 footer{
   display: block;
-  padding: 50px;
+  padding: 30px;
   margin: 0px;
   background: rgb(187,140,218);
 background: linear-gradient(90deg, rgba(187,140,218,1) 0%, rgba(222,98,98,1) 50%, rgba(235,196,140,1) 100%);
 }
 
 @media only screen and (max-width: 800px) {
-  #boxes{
+  .columns{
     display:flex;
     flex-direction: column;  
-    column-count: 3;
-    padding: 40px;
-    width: 30%;
+    padding: 30px;
     
 }
 }
@@ -514,5 +479,17 @@ background: linear-gradient(90deg, rgba(187,140,218,1) 0%, rgba(222,98,98,1) 50%
   .topnav input[type=text] {
     border: 1px solid #ccc;
   }
+  .card{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  
+
+  }
+  .card4{
+    margin-bottom: 50px;
+  }
+
+
 }
 
