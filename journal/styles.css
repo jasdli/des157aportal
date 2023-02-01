@@ -1,0 +1,83 @@
+body{
+    background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  }
+  article {
+    width: 700px;
+    margin: auto;
+}
+  h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 60px;
+    color: rgb(254, 254, 254);
+    text-align: center;
+}
+h2{
+    font-family: 'Teko', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    line-height: 2em;
+    border-top: 10px solid rgba(90,95,230,1);
+
+    background-color: rgba(176,140,235,1);
+
+    margin: auto;
+    
+}
+
+p{
+    font-family: 'Kanit', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:black;
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: rgb(140,206,218);
+
+}
+.topnav {
+    overflow: hidden;
+    background: rgb(140,206,218);
+background: linear-gradient(90deg, rgba(140,206,218,1) 0%, rgba(90,95,230,1) 48%, rgba(176,140,235,1) 100%);
+    width: 700px;
+    margin: auto;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: center;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Teko', sans-serif;
+  }
+  .topnav a:hover {
+
+    background: rgb(187,140,218);
+background: linear-gradient(90deg, rgba(187,140,218,1) 0%, rgba(222,98,98,1) 50%, rgba(235,196,140,1) 100%);
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: dotted;
+
+    color: rgb(246, 244, 244);
+  }
+  .topnav a.active {
+    background-color: rgb(140,206,218);
+    background: linear-gradient(90deg, rgba(140,206,218,1) 0%, rgba(90,95,230,1) 48%, rgba(176,140,235,1) 100%);
+    color: white;
+  }
+  @media screen and (max-width: 600px) {
+    article {
+        width: 400px;
+        margin: auto;
+    }
+    .topnav{
+        width: 400px;
+        margin: auto;
+    }
+}
