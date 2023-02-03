@@ -71,6 +71,31 @@ background: linear-gradient(90deg, rgba(187,140,218,1) 0%, rgba(222,98,98,1) 50%
     background: linear-gradient(90deg, rgba(140,206,218,1) 0%, rgba(90,95,230,1) 48%, rgba(176,140,235,1) 100%);
     color: white;
   }
+  .layout{
+    display: block;
+    padding: 50px;
+    color: #8BC6EC;
+    margin: auto;
+  }
+  .layout a{
+    display: block;
+    padding: 20px;
+    background-color: #9599E2;
+    color: aliceblue;
+    margin-top: 20px;
+    font-family: 'Teko', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 30px;
+    border: 5px solid#8BC6EC;
+
+  }
+  .layout a:hover{
+    text-decoration: underline;
+    color: #8BC6EC;
+
+  }
+  
   @media screen and (max-width: 600px) {
     article {
         width: 400px;
