@@ -1,3 +1,9 @@
+body{
+    background-color: #80d0c7;
+    background-image: linear-gradient(192deg, #80d0c7 11%, #0093e9 47%, #6284FF 61%, #d2cb96 84%, #e9d7a6 91%);
+    
+
+}
 h2{
     font-family: 'Fredoka One', cursive;
     text-align: center;
@@ -5,19 +11,39 @@ h2{
 }
 h1{
     font-family: 'Patua One', cursive;
+    font-size: 40px;
     text-align: center;
-    font-size: 30px;
 }
 form{
     font-family: 'Advent Pro', sans-serif;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 700px;
+    font-size: 30px;
+    line-height: 2em;
     text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+
     
 
 }
-main{
-    background-image: url(images/leave.png);
+.flower{
+   float: right;
+   margin: auto;
+   transition: transform .7s ease-out;
+}
+.flower:hover{
+    transform: rotate(360deg);
+
+}
+
+.leaves{
+    margin: auto;
     position: relative;
+    animation: wiggle 3s infinite ease-in-out;
+}
+@keyframes wiggle{
+    0% {transform: rotate(10deg);}
+    25% {transform: rotate(-10deg);}
+    50% {transform: rotate(10deg);}
+    75% {transform: rotate(-10deg);}
+    100% {transform: rotate(10deg);}
 }
