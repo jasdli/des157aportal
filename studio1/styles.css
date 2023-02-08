@@ -1,0 +1,23 @@
+h2{
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+
+}
+h1{
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    font-size: 30px;
+}
+form{
+    font-family: 'Advent Pro', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 700px;
+    text-align: center;
+    
+
+}
+main{
+    background-image: url(images/leave.png);
+    position: relative;
+}

@@ -95,7 +95,13 @@ background: linear-gradient(90deg, rgba(187,140,218,1) 0%, rgba(222,98,98,1) 50%
     color: #8BC6EC;
 
   }
-  
+  #form .topnav a{
+    display: block;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+  }
   @media screen and (max-width: 600px) {
     article {
         width: 400px;
