@@ -16,6 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@1,300&family=Fredoka+One&family=Patua+One&family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <title>Document</title>
+    <script src="script.js" defer></script>
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -72,7 +73,8 @@
         
     </form>
     <form method="post" action="processor.php">-->
-<form>
+<section>
+<form id="myform">
    <label for="one">Hey,</label>
         <input type="text" id="one">
    
@@ -86,21 +88,35 @@
     <label for="four"> I also</label>
     <input type="text" id="four">
 
-    <label for="five">on the trip. It was so much fun! 
-    </label>
-    <input type="text" id="five">
+ on the trip. It was so much fun! 
+ 
 
-    <label for="six">Wish you were here,</label>
-    <input type="text" id="six">
-    <label for="seven">Your</label>
-    <input type="text" id="seven">
-    <label for="eight">Jojo</label>
-    <input type="text" id="eight">
-    <input type="submit" value="submit">
+   <div>
+    Wish you were here,
+
+    <label for="five">Your</label>
+    <input type="text" id="five">
+ Jojo
+ 
+
+   </div>
+   
+
+        
+        <button id="submit">Submit</button>
+
 </form>
-<section>
-    <img class="leaves" src="images/leave.png" alt="leaves" width="300" height="400">
+<article id="madlib"></article>
 </section>
+
+<section id="two" class="hidden">
+
+    <button id="start">Start</button>
+</section>
+
+<div>
+    <img class="leaves" src="images/leave.png" alt="leaves" width="300" height="400">
+</div>
 
 
     

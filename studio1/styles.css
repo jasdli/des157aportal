@@ -21,10 +21,25 @@ form{
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
+    position: relative;
 
     
 
 }
+form label{
+    position: relative;
+}
+#myform{
+    display: block;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 20px;
+    border: 2px solid #d2cb96;
+    background-color: #6284FF;
+    position: center;
+}
+
+
 .flower{
    float: right;
    margin: auto;
