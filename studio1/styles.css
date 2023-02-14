@@ -1,26 +1,26 @@
 body{
-    background-color: #80d0c7;
-    background-image: linear-gradient(192deg, #80d0c7 11%, #0093e9 47%, #6284FF 61%, #d2cb96 84%, #e9d7a6 91%);
+    background-color: #fbf7eb;
     
 
 }
 h2{
     font-family: 'Fredoka One', cursive;
     text-align: center;
+    font-size: 15px;
+    line-height: 1em;
 
 }
 h1{
     font-family: 'Patua One', cursive;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 }
 form{
     font-family: 'Advent Pro', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 2em;
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
+
+
     position: relative;
 
     
@@ -32,11 +32,16 @@ form label{
 #myform{
     display: block;
     box-sizing: border-box;
-    padding: 50px;
+    padding: 35px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 150px;
+    margin-right: 150px;
+
     border-radius: 20px;
-    border: 2px solid #d2cb96;
-    background-color: #6284FF;
-    position: center;
+    border: 20px solid  #a1747f;
+    background-color: #fbf7eb;
+    position: relative;
 }
 
 
@@ -53,7 +58,13 @@ form label{
 .leaves{
     margin: auto;
     position: relative;
-    animation: wiggle 3s infinite ease-in-out;
+    animation: wiggle 5s infinite ease-in-out;
+}
+.hamster{
+    position: sticky;
+}
+.sunset{
+    position: relative;
 }
 @keyframes wiggle{
     0% {transform: rotate(10deg);}
@@ -61,4 +72,31 @@ form label{
     50% {transform: rotate(10deg);}
     75% {transform: rotate(-10deg);}
     100% {transform: rotate(10deg);}
+}
+.hidden{
+    display: none;
+
+}
+.showing{
+    display: block;
+
+}
+article{
+    width: 80%;
+    height: 130%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    background-image: url(images/po2.png);
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 40px;
+    line-height: 1.5em;
+   
+    color: black;
+    margin-top: 20%;
+    text-align: center;
+    margin-left: 30px ;
+    margin-right: 150px;
 }
