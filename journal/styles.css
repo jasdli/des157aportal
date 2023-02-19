@@ -5,10 +5,14 @@ body{
   article {
     width: 700px;
     margin: auto;
+    border: 10px solid rgba(90,95,230,1);
+    border-radius: 20px;
+    border-bottom: 20px;
+    margin-bottom: 20px;
 }
   h1{
     font-family: 'Kanit', sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     color: rgb(254, 254, 254);
     text-align: center;
 }
@@ -37,71 +41,6 @@ a{
     color: rgb(140,206,218);
 
 }
-.topnav {
-    overflow: hidden;
-    background: rgb(140,206,218);
-background: linear-gradient(90deg, rgba(140,206,218,1) 0%, rgba(90,95,230,1) 48%, rgba(176,140,235,1) 100%);
-    width: 700px;
-    margin: auto;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: center;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 30px;
-    font-family: 'Teko', sans-serif;
-  }
-  .topnav a:hover {
-
-    background: rgb(187,140,218);
-background: linear-gradient(90deg, rgba(187,140,218,1) 0%, rgba(222,98,98,1) 50%, rgba(235,196,140,1) 100%);
-    padding: 20px;
-    border-radius: 10px;
-    text-decoration: dotted;
-
-    color: rgb(246, 244, 244);
-  }
-  .topnav a.active {
-    background-color: rgb(140,206,218);
-    background: linear-gradient(90deg, rgba(140,206,218,1) 0%, rgba(90,95,230,1) 48%, rgba(176,140,235,1) 100%);
-    color: white;
-  }
-  .layout{
-    display: block;
-    padding: 50px;
-    color: #8BC6EC;
-    margin: auto;
-  }
-  .layout a{
-    display: block;
-    padding: 20px;
-    background-color: #9599E2;
-    color: aliceblue;
-    margin-top: 20px;
-    font-family: 'Teko', sans-serif;
-    font-size: 24px;
-    text-align: center;
-    border-radius: 30px;
-    border: 5px solid#8BC6EC;
-
-  }
-  .layout a:hover{
-    text-decoration: underline;
-    color: #8BC6EC;
-
-  }
-  #form .topnav a{
-    display: block;
-    padding: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-
-  }
   @media screen and (max-width: 600px) {
     article {
         width: 400px;

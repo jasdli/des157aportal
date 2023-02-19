@@ -81,6 +81,9 @@ form label{
     display: block;
 
 }
+label{
+    align-items: center;
+}
 article{
     width: 80%;
     height: 130%;
@@ -90,6 +93,7 @@ article{
     right: 30%;
     transform: translate(-50%, -50%);
     background-image: url(images/po2.png);
+    background-repeat: no-repeat;
     font-family: 'Advent Pro', sans-serif;
     font-size: 40px;
     line-height: 1.5em;
