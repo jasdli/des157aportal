@@ -1,45 +1,43 @@
-* { box-sizing: border-box; }
-.grid {
-    background: #ddd;
-    max-width: 1200px;
-  }
+:root{
+  --slidewidth: ;
+}
+@keyframes moveSlider {
+  from {left :0;}
+  to {left: var(--slidewidth);}
+}
+.animate{
+  animation-name: moveSlider;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+article img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#one{
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+}
+.slider{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+}
+.sliderpaused{
+  display: flex;
+  position: absolute;
+    top:0;
+    /*right: 0;  this is the only change! */
+    height: 400px;
+}
+.a, .b {
+  display: flex;
+  height: 100%;
+}
 
-  /* clearfix */
-.grid:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-  .grid-item {
-    width: 160px;
-    height: 120px;
-    float: left;
-    border: 2px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.5);
-    border-radius: 5px;
-  }
-  
-  .grid-item--width2 { width: 320px; }
-  .grid-item--height2 { height: 260px; }
-  .grid-item--height3 { height: 360px; }
-
-  .grid-item img {
-    display: block;
-    max-width: 100%;
-  }
-
-  .grid-item {
-    float: left;
-  }
-  .grid-item--gigante {
-    width: 320px;
-    height: 360px;
-  }
-  
-  .grid-item:hover {
-    border-color: white;
-    cursor: pointer;
-  }
-
-/* force scrollbar */
-html { overflow-y: scroll; }
