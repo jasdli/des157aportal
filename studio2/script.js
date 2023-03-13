@@ -136,4 +136,11 @@ window.addEventListener('load', function () {
         }
     });
 });
+function on() {
+    document.getElementById("night").style.display = "block";
+  }
+  
+  function off() {
+    document.getElementById("night").style.display = "none";
+  }
 

@@ -13,6 +13,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Shantell+Sans&display=swap" rel="stylesheet">
 
     <title>Jasmine'Every Day Picture</title>
   
@@ -20,7 +22,9 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Jasmine's Garden Guide</h1>
+  <header>
+    <h1><span class="highlight">Jasmine's Garden Guide</span></h1>
+  </header>
     <section id="one">
       <div class="slider">
         <div class="a">
@@ -41,24 +45,39 @@
       </div>
     </section>
     
+    <section class="overlay hidden" id="1">
+      <article>
+        <img src="images/gardenday.png" alt="the photo">
+        <div>
+          <h2>Echeveria cv Beniothine</h2>
+          <img src="images/1.png" alt="a photo">
+          <p>Echeveria cv Beniothine grow with red and pink edges on their leaves. The thick pale green leaves arranged in a circular pattern resembles locust flowers. </p>
+        </div>
+        <button class="corner close">&otimes;</button>
+      </article>
+    </section>
+
     <section class="overlay hidden" id="2">
       <article>
-        <img src="images/2.png" alt="a photo">
+        <img src="images/gardenday.png" alt="the photo">
         <div>
           <h2>Graptosedum Ghosty</h2>
+          <img src="images/2.png" alt="a photo">
           <p>It is a hybrid between Graptopetalum and Sedum. The graptosedum has beautiful colorful rosettes. The plant turns to yellow-pink in spring or in full sun. 
           </p>
         </div>
         <button class="corner close">&otimes;</button>
       </article>
     </section>
-    
-    <section class="overlay hidden" id="1">
+
+    <section class="overlay hidden" id="4">
       <article>
-        <img src="images/1.png" alt="a photo">
+        <img src="images/gardenday.png" alt="the photo">
         <div>
-          <h2>Echeveria cv Beniothine</h2>
-          <p>Echeveria cv Beniothine grow with red and pink edges on their leaves. The thick pale green leaves arranged in a circular pattern resembles locust flowers. </p>
+          <h2>Echeveria</h2>
+          <img src="images/4.png" alt="a photo">
+          <p>Echeveria in this image are rare succulents with tiny sizes. Each of them have different colors and names. The ones with pink red edges are called Strawberry Cream. 
+          </p>
         </div>
         <button class="corner close">&otimes;</button>
       </article>
@@ -66,10 +85,11 @@
     
     <section class="overlay hidden" id="5">
       <article>
-        <img src="images/5.png" alt="a photo">
+        <img src="images/gardenday.png" alt="the photo">
         <div>
           <h2>Echeveria Blue Minima
           </h2>
+          <img src="images/5.png" alt="a photo">
           <p>Each rosette is packed densely. The frosty-mint leaves have well defined sides and a pink tinge to the margins. The rosette clusters will stay dense with plenty of sunshine and infrequent watering. 
           </p>
         </div>
@@ -77,12 +97,31 @@
       </article>
     </section>
     
-    <section class="overlay hidden" id="4">
+
+
+
+    <section class="overlay hidden" id="6">
       <article>
-        <img src="images/4.png" alt="a photo">
+        <img src="images/gardenday.png" alt="the photo">
         <div>
-          <h2>Echeveria</h2>
-          <p>Echeveria in this image are rare succulents with tiny sizes. Each of them have different colors and names. The ones with pink red edges are called Strawberry Cream. 
+          <h2>Sedum Treleasei
+          </h2>
+          <img src="images/6.png" alt="a photo">
+          <p>Sedum treleasei is a succulent subshrub, and native to Mexico. The stems can grow up to 20cm tall. The leaves are oblong with pale yellow-green color. It can grow from full sun to partial shade. Before you water sedum treleasei, make sure all of the soil is dry out. 
+          </p>
+        </div>
+        <button class="corner close">&otimes;</button>
+      </article>
+    </section>
+
+    <section class="overlay hidden" id="7">
+      <article>
+        <img src="images/gardenday.png" alt="the photo">
+        <div>
+          <h2>Succulent Plants
+          </h2>
+          <img src="images/7.png" alt="a photo">
+          <p>This shows a variety of succulent plants. The yellow plant in the middle is called Graptopetalum amethystinum. The uniqueness of Graptopetalum amethystinum is its fleshy and rounded leaves. 
           </p>
         </div>
         <button class="corner close">&otimes;</button>
@@ -91,9 +130,10 @@
 
     <section class="overlay hidden" id="8">
       <article>
-        <img src="images/8.png" alt="a photo">
+        <img src="images/gardenday.png" alt="the photo">
         <div>
           <h2>Echeveria Amistar</h2>
+          <img src="images/8.png" alt="a photo">
           <p>This is another type of echeveria. Echeveria amistar have red pointed leaf tips. I know that if the plant is “happily stressed”, the edges of leaves will also turn red (as shown in the image). Echeveria are low maintenance and do not need a lot of care. 
 
           </p>
@@ -102,26 +142,13 @@
       </article>
     </section>
 
-
-    <section class="overlay hidden" id="6">
-      <article>
-        <img src="images/6.png" alt="a photo">
-        <div>
-          <h2>Sedum Treleasei
-          </h2>
-          <p>Sedum treleasei is a succulent subshrub, and native to Mexico. The stems can grow up to 20cm tall. The leaves are oblong with pale yellow-green color. It can grow from full sun to partial shade. Before you water sedum treleasei, make sure all of the soil is dry out. 
-          </p>
-        </div>
-        <button class="corner close">&otimes;</button>
-      </article>
-    </section>
-
     <section class="overlay hidden" id="9">
       <article>
-        <img src="images/9.png" alt="a photo">
+        <img src="images/gardenday.png" alt="the photo">
         <div>
           <h2>Echeveria ice berry 
           </h2>
+          <img src="images/9.png" alt="a photo">
           <p>Echeveria ice berry has a similar appearance with other kinds of echeveria. This plant grows with dense pink-green leaves. It is new to our home and arrived recently. 
  
           </p>
@@ -129,6 +156,86 @@
         <button class="corner close">&otimes;</button>
       </article>
     </section>
+
+    <section class="overlay hidden" id="10">
+      <article>
+        <img src="images/gardenday.png" alt="the photo">
+        <div>
+          <h2>Echeveria Violet Queen 
+          </h2>
+          <img src="images/10.png" alt="a photo">
+          <p>Violet Queen rosette color is bluish-gray with a pinky hue. As an evergreen perennial succulent, Echeveria Violet Queen is very handy for newbies. This type of succulent can form clumps, and grow to 15cm in diameter and 10 cm in height in good conditions.
+ 
+          </p>
+        </div>
+        <button class="corner close">&otimes;</button>
+      </article>
+    </section>
+
+    <section class="overlay hidden" id="11">
+      <article>
+        <img src="images/gardenday.png" alt="the photo">
+        <div>
+          <h2>Mountain Rose</h2>
+          <img src="images/11.png" alt="a photo">
+          <p>
+
+            The rose succulents refer to the genus of Greenovia. The best way to care for them is to plant them in pots. We put the plant on our balcony that's sunny in the morning and shady during the heat of the afternoon. Rose succulents need a lot of light. Rose Succulents don't turn colors when they're exposed to lots of light like other succulents. 
+ 
+          </p>
+        </div>
+        <button class="corner close">&otimes;</button>
+      </article>
+    </section>
+
+    <section class="overlay hidden" id="12">
+      <article>
+        <img src="images/gardenday.png" alt="the photo">
+        <div>
+          <h2>Succulents</h2>
+          <img src="images/12.png" alt="a photo">
+          <p>
+            This is another section of “our garden area”. To care for these indoor plants, we rotate them frequently for them to get direct sunlight. When we water our succulent plants, we water the soil directly. Using a spray bottle to water the succulents will cause moldy leaves and brittle roots. 
+          </p>
+        </div>
+        <button class="corner close">&otimes;</button>
+      </article>
+    </section>
+
+    <div class="daytime">
+        <img class="daytimeimage" src="images/gardenday.png" alt="day" width="300" height="400">
+        <div class="daytimetext">
+        <h3>Day Time</h3>
+        <nav>
+          <ul>
+            <span><li><a>Choose the right soil: Succulents need well-draining soil that allows water to pass through easily. You can use a special succulent soil mix or make your own by mixing equal parts of sand, perlite, and potting soil.</a></li></span>
+            <span><li><a>Water sparingly: Succulents are adapted to survive in dry environments, so they don't need frequent watering. Only water them when the soil is completely dry. Overwatering can cause root rot, which can be fatal for the plant.</a></li></span>
+            <span><li><a>Provide enough light: Succulents need plenty of sunlight to thrive. Place them in a bright spot where they can get at least six hours of direct sunlight each day.</a></li></span>
+            <span><li><a>Keep the temperature consistent: Succulents prefer warm temperatures, ideally between 60°F and 80°F. Avoid placing them in drafty areas or near air conditioning units, as sudden temperature changes can stress the plant.</a></li></span>
+            <span><li><a>Fertilize occasionally: Succulents don't need much fertilizer, but you can give them a boost by fertilizing them once a month during the growing season (spring and summer). Use a balanced fertilizer and dilute it to half strength.</a></li></span>
+          </ul>
+        </nav>
+      </div>
+   
+    </div>
+
+    <div class="daytime">
+      <img class="daytimeimage" src="images/nighttime.png" alt="day" width="300" height="400">
+      <div class="daytimetext">
+      <h3>Night Time</h3>
+      <nav>
+        <ul>
+          <span><li><a>Provide additional light with grow lights: If your succulents aren't receiving enough natural light during the day, you can use grow lights to supplement their light needs during the night. Use grow lights that emit red and blue wavelengths, as these are the most important for plant growth.</a></li></span>
+          <span><li><a>Use a timer: To ensure that your succulents receive the right amount of light, use a timer to regulate the grow lights. Set the timer to turn on the grow lights for 6-8 hours, and turn them off for the remaining 16-18 hours.</a></li></span>
+          <span><li><a>Keep the temperature consistent: Succulents prefer warm temperatures during the day, but they also need cool temperatures at night to rest and grow. Maintain a temperature range between 55°F and 65°F during the night to provide optimal growing conditions for your succulents.</a></li></span>
+          <span><li><a>Avoid overwatering: Succulents require less water during the night, as they are not actively growing. Avoid watering your succulents at night, as the soil may not have enough time to dry out before the next day.</a></li></span>
+          <span><li><a>Rotate the plant: If you're using grow lights, rotate the succulent regularly to ensure all parts receive equal light exposure. Otherwise, some parts may become elongated or deformed due to uneven light distribution.</a></li></span>
+        </ul>
+      </nav>
+    </div>
+ 
+  </div>
+
 </body>
 </html>
 

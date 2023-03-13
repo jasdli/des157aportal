@@ -1,5 +1,5 @@
 :root{
-  --sliderwidth: ;
+  --sliderwidth: 100%;
 }
 @keyframes moveSlider {
   from {left :0;}
@@ -13,8 +13,19 @@
 }
 article img{
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+}
+.overlay div img{
+ margin: auto;
+ display: block;
+ transform: scale(0.9);
+ 
+
+}
+.overlay div img:hover{
+  transform: scale(1.3);
+  transition: all 2s ease-in-out;
 }
 #one{
   width: 100%;
@@ -36,10 +47,24 @@ article img{
     /*right: 0;  this is the only change! */
     height: 400px;
 }
+.slider img{
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  transform: scale(0.9);
+}
+.slider img:hover{
+  transform: scale(1);
+  transition: all 1s ease-in-out;
+}
 
 .a, .b {
   display: flex;
   height: 100%;
+}
+/*background image*/
+body{
+  background-image: url(images/plantbackground.png);
 }
 /*overlay*/
 .hidden{
@@ -47,7 +72,7 @@ article img{
   opacity: 0;
 }
 .showing{
-  visibility: showing;
+  visibility: visible;
   opacity: 1;
 }
 .overlay{
@@ -77,12 +102,13 @@ article img{
 .overlay article h2{
 font-family: 'Climate Crisis', cursive;
 text-transform: uppercase;
-font-size: 30px;
+font-size: 20px;
 margin-bottom: 4em;
+letter-spacing: 0.125em;
 }
 .overlay article p{
   font-family: 'Oswald', sans-serif;
-  font-size: 10px; 
+  font-size: 15px; 
   line-height: 1.4em;
 
 }
@@ -102,4 +128,106 @@ margin-bottom: 4em;
   cursor: pointer;
   outline: none;
 }
+
+h1{
+  text-align: center;
+  font-family: 'Rubik Iso', cursive;
+  font-size: 60px;
+  color: rgb(49, 52, 54);
+}
+.highlight{
+  display: inline-block;
+  background: #e4e3de;
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 5px 5px 10px;
+
+}
+
+/*scroll*/
+
+/*.daytime{
+  display: block;
+  padding: auto;
+  background-color: #e4e3de;
+  border: 10px dashed antiquewhite;
+
+}
+
+
+.nighttime{
+  opacity: 1;
+  filter: blur(0);
+  transition: all 500ms ease-in;
+  transform: translateX(0);
+  justify-content: center;
+  align-items: center;
+}*/
+.daytime{
+  border: 10px dashed antiquewhite;
+  padding: 20px 40px 40px;
+  background-color: white;
+  max-width: 640px;
+  margin: auto;
+  margin-top: 30px;
+
+}
+.daytimeimage {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    margin: 20px 30px 0 0;
+  }
+  .daytimetext {
+    display: inline-block;
+    width: 46%;
+    height: 50%;
+  }
+
+h3{
+  font-family: 'Climate Crisis', cursive;
+text-transform: uppercase;
+letter-spacing: 0.125em;
+}
+nav ul li a{
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px; 
+  line-height: 1em;
+
+}
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 1.5s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 1.5s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 1.5s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 1.5s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 1.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+
+
 
