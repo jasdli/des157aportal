@@ -1,0 +1,33 @@
+/*button*/
+#startgame{
+    padding: 50px 150px;
+    background-color: rgb(168, 208, 224);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 30px;
+    font-family: 'Baloo 2', cursive;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+h1{
+
+font-family: 'Barriecito', cursive;
+text-align: center;
+font-size: 100px;
+}
+#gamecontrol{
+    background-image: url(images/gamebg.png);
+    background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+   
+
+}
+/*.gamebg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
