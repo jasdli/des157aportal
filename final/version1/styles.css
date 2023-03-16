@@ -1,0 +1,138 @@
+/* header scrolling text*/
+.scroll-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-family: 'Dokdo', cursive;
+    font-size: 30pt;
+  }
+  
+  .scroll-text1 {
+    text-align: right;
+  }
+  .scroll-text2{
+    text-align: left;
+  }
+  
+    /* animation properties */
+    .scroll-text1{
+    transform: translateX(100%); 
+    animation: my-animation 25s linear infinite;
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .scroll-text2{
+    transform: translateX(100%); 
+    animation: my-animation 25s linear infinite;
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+/*text styling*/
+  .twocolumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .twocolumns div {
+    font-family: 'Blinker', sans-serif;
+    text-indent: 1.5em;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .twocolumns div:first-child{
+    border-top: 2px solid black;
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+  .twocolumns div:last-child {
+    border-top: 1px solid black;
+  }
+  /*.twocolumns div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+    height: 100%;
+    width: calc(100% + 1px);
+    border-left: 1px solid black;
+  }*/
+  .twocolumns .ending {
+    border-top: 1px solid black;
+    padding-bottom: 10px;
+    font-family: 'Dokdo', cursive;
+    font-size: 10pt;
+  }
+  .twocolumns .intro{
+    border-top: 1px solid black;
+    padding-bottom: 10px;
+    font-family: 'Dokdo', cursive;
+    font-size: 10pt;
+    text-align: right;
+  }
+  h1,h2{
+    font-family: 'Bungee Shade', cursive;
+  }
+  .middlecolumns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+  }
+  .middlecolumns div{
+    font-family: 'Blinker', sans-serif;
+  }
+  .middlecolumns div:last-child{
+    border-top: 1px solid black;
+  }
+  .middlecolumns .intro{
+    padding-bottom: 10px;
+    font-family: 'Dokdo', cursive;
+    font-size: 10pt;
+    text-align: right;
+  }
+ /* .rightcolumn {
+    float: right;
+    width: 40%;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  .leftcolumn {
+    float: left;
+    width: 60%;
+  }*/
+  
+
+
+    
+  
