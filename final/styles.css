@@ -1,34 +1,46 @@
-h1{
-    font-family: 'Rubik Iso', cursive;
-    text-align: center;
-
-}
-h2{
-    font-family: 'Rubik Iso', cursive;
-    text-align: center;
-    font-size: 40px;
-    text-decoration: underline;
-
-}
-p{
-    font-family: 'Shantell Sans', cursive;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-indent: 30px;
-}
-body{background-color: #FAACA8;
-background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 63%, #a7bee9 100%);
-}
-section{
-    display: block;
-    padding: 35px;
-    background-color: aliceblue;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    border: 2px dotted rosybrown;
-    border-radius: 10px;
+/* header*/
+#scroll-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #scroll-text {
+    text-align: right;
+  
+    /* animation properties */
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
     
-}
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+  }
 
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+    to {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+  }
+/*text*/
+  .twocolumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
