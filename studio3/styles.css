@@ -1,14 +1,27 @@
 /*button*/
-#startgame{
-    padding: 50px 150px;
+/*#startgame{
+    padding: 40px 80px;
     background-color: rgb(168, 208, 224);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 30px;
     font-family: 'Baloo 2', cursive;
-    display: flex;
+    font-size: 30pt;
+   /* display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 10px;
+    display: block;
+    margin: 20px auto 0;
     
+}*/
+button{
+  padding: 40px;
+    background-color: rgb(168, 208, 224);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 30px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 20pt;
+    margin: auto;
 }
 h1{
 
@@ -17,17 +30,61 @@ text-align: center;
 font-size: 100px;
 }
 #gamecontrol{
-    background-image: url(images/gamebg.png);
-    background-size:cover;
-  background-repeat:no-repeat;
-  background-position:center center;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 
 }
+#gamecontrol::before {
+    content: ""; /* Add this to create a pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(233, 215, 215, 0.5); /* Add your desired background color here */
+    z-index: -1; /* Add this to place the pseudo-element behind the child elements */
+  }
+  #first {
+    position: relative;
+    padding: 50px;
+  }
+  
+  #gamecontrol {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .hamsterleft,
+  .hamsterright {
+    position: absolute;
+    top: 0;
+    height: 50%;
+    max-width: 50%;
+    z-index: 0;
+  }
+  
+  .hamsterleft {
+    left: 0;
+  }
+  
+  .hamsterright {
+    right: 0;
+  }
+  
 /*.gamebg{
     position: fixed;
     top: 0;
     left: 0;
     min-width: 100%;
     min-height: 100%;
+}
+/*overlay*/
+.hidden{
+    display: none;
+}
+.showing{
+    display: block;
 }

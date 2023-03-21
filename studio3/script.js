@@ -6,6 +6,7 @@
     const game = document.getElementById('game');
     const score= document.getElementById('score');
     const actionArea = document.getElementById('actions');
+    const first = document.getElementById('first');
 
     const gameData = {
         dice:['images/d1.png', 'images/d2.png', 'images/d3.png', 'images/d4.png','images/d5.png', 'images/d6.png'],
@@ -19,6 +20,7 @@
 
     }
     startGame.addEventListener('click', function(){
+        first.style.display = "none";
         gameData.index = Math.round(Math.random());
         gameControl.innerHTML = '<h2>The game has started</h2>';
         gameControl.innerHTML += '<button id ="quit">Wanna Quit?</button>';
