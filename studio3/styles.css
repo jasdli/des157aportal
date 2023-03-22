@@ -1,61 +1,59 @@
-/*button*/
-/*#startgame{
-    padding: 40px 80px;
-    background-color: rgb(168, 208, 224);
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    border-radius: 30px;
-    font-family: 'Baloo 2', cursive;
-    font-size: 30pt;
-   /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 10px;
-    display: block;
-    margin: 20px auto 0;
-    
-}*/
+body {
+  background-color: #FFE1AB; /* Add your desired background color here */
+  z-index: -1; /* Add this to place the pseudo-element behind the child elements */
+}
+/*animation*/
+h1{
+  font-family: 'Barriecito', cursive;
+  text-align: center;
+  font-size: 100px;
+  animation: glitch 1s linear infinite;
+}
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+p{
+  font-family: 'Barriecito', cursive;
+  text-align: center;
+  font-size: 30px;
+}
+h2{
+  font-family: 'Baloo 2', cursive;
+  font-size: 15pt;
+  line-height: 1.5em;
+}
+
 button{
-  padding: 40px;
+  padding: 30px;
     background-color: rgb(168, 208, 224);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 30px;
     font-family: 'Baloo 2', cursive;
-    font-size: 20pt;
+    font-size: 15pt;
     margin: auto;
 }
-h1{
 
-font-family: 'Barriecito', cursive;
-text-align: center;
-font-size: 100px;
-}
 #gamecontrol{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-}
-#gamecontrol::before {
-    content: ""; /* Add this to create a pseudo-element */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(233, 215, 215, 0.5); /* Add your desired background color here */
-    z-index: -1; /* Add this to place the pseudo-element behind the child elements */
+ 
+  
+    text-align: center;
   }
+
+
+
   #first {
     position: relative;
     padding: 50px;
   }
-  
-  #gamecontrol {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-  }
+
   
   .hamsterleft,
   .hamsterright {
@@ -67,20 +65,13 @@ font-size: 100px;
   }
   
   .hamsterleft {
-    left: 0;
+    left:0;
   }
   
   .hamsterright {
     right: 0;
   }
-  
-/*.gamebg{
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
+
 /*overlay*/
 .hidden{
     display: none;
