@@ -133,6 +133,7 @@
     font-size: 10pt;
     text-align: right;
   }
+  /*scroll*/
   .reveal{
     position: relative;
     transform: translateY(150px);
@@ -152,7 +153,6 @@ body {
     margin: 0;
     padding: 0;
 }
-/* I added this for the section */
 #one, #two {
     width: 100%;
     overflow-x: hidden;

@@ -1,4 +1,7 @@
-
+(function(){
+    'user strict';
+    console.log('reading js');
+});
 
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -37,13 +40,3 @@ window.addEventListener('load', function () {
     
 });
 
-/*const scrollImage = document.getElementById('one');
-
-window.addEventListener('scroll', function() {
-  // Show the image when the user has scrolled down by a certain amount
-  if (window.scrollY > 500) {
-    scrollImage.style.display = 'block';
-  } else {
-    scrollImage.style.display = 'none';
-  }
-});*/
