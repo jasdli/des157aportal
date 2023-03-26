@@ -17,20 +17,6 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- <section id="first" class="showing">
-        <img class="hamsterleft" src="images/gameonhamster1.png" alt="gamehamster">
-        <img class="hamsterright" src="images/gameonhamster2.png" alt="gamehamster1">
-        <div id="gamecontrol">
-
-            <h1>Game On!</h1>
-            <button id="startgame">Start the Game</button>
-        </div>
-</section>
-   <div id="gamecontrol">
-        <h2>Game On!</h2>
-        <button id="startgame">Start the Game</button>
-    </div>!-->
-
     <section id="first" class="showing">
         <div id="gamecontrol">
           <h1>Game On!</h1>
@@ -47,14 +33,28 @@
         <img class="hamsterright" src="images/gameonhamster1.png" alt="gamehamster">
         
       </section>
-    <section id="second" class="">
+    <section id="second" class="hidden">
         <div id="game">
             <button>Wanna Quit?</button>
+        </div>   
+    <div class="container">
+        <div class="hamster-container">
+            <h2>Hamster1</h2>   
+            <img class="hamster2" src="images/gameonhamster2.png" alt="hamster2" width="275" height="300" id="hamster2">
+        </div>
+        <div class="hamster-container">
+            <h2>Hamster2</h2>
+            <img class="hamster1" src="images/gameonhamster1.png" alt="hamster1" width="300" height="300" id="hamster1">
         </div>
         <div id="actions">
             <button>Roll Again</button>
             <button>Pass</button>
+            
         </div>
+    </div>
+    </section>
+    <section id="thrid" class="hidden">
+        <!--<img src="images/win.png" alt="win">-->
         <div id="score"></div>
     </section>
 

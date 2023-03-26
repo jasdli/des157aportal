@@ -6,11 +6,12 @@
     const game = document.getElementById('game');
     const score= document.getElementById('score');
     const actionArea = document.getElementById('actions');
+
     /*const first = document.getElementById('first');*/
 
     const gameData = {
         dice:['images/d1.png', 'images/d2.png', 'images/d3.png', 'images/d4.png','images/d5.png', 'images/d6.png'],
-        player: ['player 1', 'player 2'],
+        player: ['hamster 1', 'hamster 2'],
         score: [0,0],
         roll1: 0,
         roll2: 0,
@@ -21,6 +22,8 @@
     }
     startGame.addEventListener('click', function(){
        /* first.style.display = "none";*/
+       document.getElementById('second').className = 'showing';
+       document.getElementById('first').className = 'hidden';
         gameData.index = Math.round(Math.random());
         gameControl.innerHTML = '<h2>The game has started</h2>';
         gameControl.innerHTML += '<button id ="quit">Wanna Quit?</button>';
@@ -72,6 +75,7 @@
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                 setUpTurn();
             });
+            checkWinningCondition();
             
 
         }
@@ -79,12 +83,15 @@
     }
     function checkWinningCondition(){
         if(gameData.score[gameData.index]> gameData.gameEnd){
-            score.innerHTML = `<h2>${gameData.player[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
+            document.getElementById('second').className = 'hidden';
+            document.getElementById('third').className = 'showing';
+            score.innerHTML = `<h3>${gameData.player[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h3>`;
             actionArea.innerHTML = '';
-            document.getElementById('quit').innerHTML = "Start a New Game";
+            document.getElementById('quit').innerHTML = "Start a New Game?";
         }
         else{
-            score.innerHTML = `<p>The score is currently <strong>${gameData.player[0]}${gameData.score[0]}</strong> and <strong>${gameData.player[1]}${gameData.score[1]}</strong></p>`;
+            /*score.innerHTML = `<p>The score is currently <strong>${gameData.player[0]}${gameData.score[0]}</strong> and <strong>${gameData.player[1]}${gameData.score[1]}</strong></p>`;*/
+            showCurrentScore();
         }
     }
     function showCurrentScore(){

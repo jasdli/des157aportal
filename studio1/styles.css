@@ -22,6 +22,8 @@ form{
 
 
     position: relative;
+    display: flex;
+    justify-content: center;
 
     
 
@@ -43,7 +45,13 @@ form label{
     background-color: #fbf7eb;
     position: relative;
 }
-
+#submit{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    background-color: #a1747f;
+    color: #fbf7eb;
+}
 
 .flower{
    float: right;
@@ -74,11 +82,11 @@ form label{
     100% {transform: rotate(10deg);}
 }
 .hidden{
-    display: none;
+    visibility: hidden;
 
 }
 .showing{
-    display: block;
+    visibility: visible;
 
 }
 label{

@@ -69,8 +69,15 @@
         madlib.innerHTML =myText;
         madlib.className = "showing";
         
+        
 
     })
+    const myArticle = document.querySelector('twoo');
+    document.querySelectorAll('submit').addEventListener('click', function(){
+        myForm.className = "hidden";
+    });
+        myArticle.classList.remove('hidden');
+
     const sections = document.querySelectorAll('section');
     document.querySelector('submit').addEventListener('click', function(){
         sections[0].className = "form";

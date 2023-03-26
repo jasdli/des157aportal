@@ -1,0 +1,209 @@
+ /* header scrolling text*/
+ .scroll-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    font-family: 'Dokdo', cursive;
+    font-size: 50pt;
+    background-color: antiquewhite;
+  }
+  
+  .scroll-text1 {
+    text-align: right;
+  }
+  .scroll-text2{
+    text-align: left;
+  }
+  
+    /* animation properties */
+    .scroll-text1{
+    transform: translateX(100%); 
+    animation: my-animation 25s linear infinite;
+  }
+ /* for Chrome */
+ @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .scroll-text2{
+    transform: translateX(100%); 
+    animation: my-animation 25s linear infinite;
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+/*text styling*/
+  .twocolumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .twocolumns div {
+    font-family: 'Blinker', sans-serif;
+    text-indent: 1.5em;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .twocolumns div:first-child{
+    border-top: 2px solid black;
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+  .twocolumns div:last-child {
+    border-top: 1px solid black;
+  }
+
+  .twocolumns .ending {
+    border-top: 3px solid rgb(1, 1, 1);
+    padding-bottom: 10px;
+    font-family: 'Dokdo', cursive;
+    font-size: 10pt;
+  }
+  .twocolumns .intro{
+    border-top: 1px solid black;
+    padding-bottom: 10px;
+    font-family: 'Dokdo', cursive;
+    font-size: 10pt;
+    text-align: right;
+  }
+  h1,h2{
+    font-family: 'Bungee Shade', cursive;
+  }
+  h1{
+    font-size: 30pt;
+  }
+  div{
+    font-size: 20pt;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .twocolumns{
+    background-color: blanchedalmond;
+  }
+  .p{
+    text-align: left;
+  }
+  body{
+    background-color: beige;
+  }
+  .middlecolumns{
+    background-color: rgb(229, 195, 211);
+  }
+  .middlecolumns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+  }
+  .middlecolumns div{
+    font-family: 'Blinker', sans-serif;
+  }
+  .middlecolumns div:last-child{
+    border-top: 1px solid black;
+  }
+  .middlecolumns .intro{
+    padding-bottom: 10px;
+    font-family: 'Dokdo', cursive;
+    font-size: 10pt;
+    text-align: right;
+  }
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+ /*image slider*/
+ :root {
+    --sliderwidth: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/* I added this for the section */
+#one, #two {
+    width: 100%;
+    overflow-x: hidden;
+    height: 200px;
+    margin-bottom: 20px;
+    /* position: relative; */
+}
+
+.slider {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 200px;
+}
+
+.slider div img {
+    height: 100%;
+    display: block;
+    margin-right: 200px;
+}
+
+.a, .b {
+   display: flex;
+   height: 100%;
+}
+/* to slide to the right, the only thing that changes is the from and to */
+@keyframes moveSliderRight {
+    from { left: var(--sliderwidth); }
+    to { left: 0; }
+}
+
+@keyframes moveSliderLeft {
+    from { left: 0; }
+    to { left: var(--sliderwidth); }
+}
+.right {
+    animation-name: moveSliderRight;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.left {
+    animation-name: moveSliderLeft;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#two .slider div img { mix-blend-mode: multiply; }
+
+
+  
